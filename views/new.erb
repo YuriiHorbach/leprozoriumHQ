@@ -3,12 +3,12 @@
 <p>
 	<form role="form" action="/new" method="POST">
 		<div class="form-group">
-		    <input class="form-control" id="exampleFormControlinput1" placeholder="Type your name here" name="author"></input>
+		    <input class="form-control" id="exampleFormControlinput1" placeholder="Type your name here" name="post[name]" value="<%=@n.name%>"></input>
+		</div>
+		<div class="form-group">
+		    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Type post text here" name="post[content]" value="<%=@n.content%>"></textarea>
 		</div>
 
-		<div class="form-group">
-		    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Type post text here" name="content"></textarea>
-		</div>
 		
 		<button type="submit" class="btn btn-primary">Submit</button>
 	</form>
